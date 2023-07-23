@@ -24,7 +24,7 @@ const Qualification = () => {
             <p class="leading-relaxed text-lg">Dharmsinh Desai University</p>
             <div className="flex justify-between text-gray-400">
                 <p>10/2020 - Present</p>
-                <p>CPI: 8.59</p>
+                <p>CPI: 8.66</p>
             </div>
           </div>
         </div>

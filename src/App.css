@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+progress {
+    height: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #282670;
+    border-radius: 0.4rem;
+ }
+ progress::-webkit-progress-value {
+    background-image: linear-gradient(#FE689D,#FEAC73);
+    border-radius: 9999px;
+ }

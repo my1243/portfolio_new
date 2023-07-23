@@ -1,3 +1,4 @@
+import "../App.css";
 const Skills = () => {
   const skill = [
     {
@@ -45,15 +46,13 @@ const Skills = () => {
     <>
     <div className="pb-12">
       <h1 className="text-3xl font-semibold mb-8">Skills</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-20">
         {skill.map((val, idx) => {
           return (
             <>
               <div>
-                <h1 className="text-gray-400 font-medium mb-1">{val.title}</h1>
-                <div class="h-2 w-full bg-[#282670] rounded overflow-hidden">
-                  <div class={`w-[${val.percent}%] h-full bg-gradient-to-r from-[#FE689D] to-[#FEAC73] rounded-full`}></div>
-                </div>
+                <h1 className="text-gray-400 font-medium">{val.title}</h1>
+                    <progress className="w-full"  max={100} value={val.percent}/>
               </div>
             </>
           );
